@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Header(){
@@ -10,6 +11,10 @@ function Header(){
       <h3 className='ClamHeader'>Clam time, dude.</h3>
       <h3>Eat clams, dude.</h3>
       <h3>Hello clam, dude.</h3>
+        <div>
+          <h1>Help Queue</h1>
+          <Link to="/">Home</Link> | <Link to="/newticket">Create Ticket</Link> | <Link to="/picturelist">Pictures</Link> | <Link to="/examplelist">Examples</Link>
+        </div>
     </div>
   );
 }
